@@ -11,7 +11,8 @@ namespace GradeBook
 
         public void AddGrades(double added)
         {
-               
+                 grades.Add(added);   
+                Console.WriteLine(added);  
           
         }
         //Remove Grades Method
