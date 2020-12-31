@@ -31,7 +31,21 @@ namespace GradeBook
         //Shows statistics for the Highest, Lowest n Average Grades
         public void showStats()
         {
+            double high = double.MinValue;
+            double low = double.MaxValue;
+            double avg = 0.0;
 
+            foreach (var number in grades)
+            {
+                high = Math.Max(number,high);
+                low = Math.Min(number,low);
+                avg += number;
+            }
+                avg /= grades.Count;
+
+                Console.WriteLine($"The Highest Grade is {high}");
+                Console.WriteLine($"The Lowest Grade is {low}");
+                Console.WriteLine($"The Average Grade is {avg}");
         }
 
 
