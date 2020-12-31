@@ -18,7 +18,11 @@ namespace GradeBook
         //Remove Grades Method
                 public void RemoveGrades(int removed)
         {
-
+              grades.RemoveAt(removed);
+                foreach (var num in grades)
+                {
+                    Console.WriteLine(num + " ");
+                }
                              
 
         }
