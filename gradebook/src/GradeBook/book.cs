@@ -53,7 +53,8 @@ namespace GradeBook
         public  Book(string name)
         {
 
-                
+            Console.WriteLine(name);
+                grades = new List<double>();
         }
 
         List<double> grades;
